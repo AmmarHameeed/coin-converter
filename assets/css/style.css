@@ -1,0 +1,12 @@
+#background-radial-gradient{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    width: calc(100vw);
+    height: calc(100vh - 64px);
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    z-index: -1;
+}
