@@ -96,8 +96,23 @@
         <div class="modal fade" id="connectWallet" tabindex="-1" aria-labelledby="connectWallet" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
                     <div class="modal-body">
-                        Modal content goes here
+                        <div class="modal-connect-token">
+                            <div class="ct-modal-inner">
+                                <img src="assets/img/logo-desktop.svg">
+                                <h5>Connect Ronin Wallet</h5>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  I have read and agree to the <a class="blue-text" href="#">Terms of Service.</a>
+                                </label>
+                            </div>
+                            <button class="ct-modal-connect-btn">Connect to Ronin Wallet</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,8 +120,58 @@
         <div class="modal fade" id="tokenSymbol" tabindex="-1" aria-labelledby="tokenSymbol" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title select-token-heading-modal">Select a token</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
                     <div class="modal-body">
-                        Modal content goes here 2222222
+                        <div class="token-row-holder">
+                            <div class="token-row">
+                                <div class="token-row-left">
+                                    <img src="assets/img/token-1.png">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">weth</span>
+                                    <span class="token-name">Ronin Wrapped Ether</span>
+                                </div>
+                            </div>
+                            <div class="token-row">
+                                <div class="token-row-left">
+                                    <img src="assets/img/axs.3b7405b0.png">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">axs</span>
+                                    <span class="token-name">Axie Infinity Shard</span>
+                                </div>
+                            </div>
+                            <div class="token-row">
+                                <div class="token-row-left">
+                                    <img src="assets/img/slp.a3a5526b.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">slp</span>
+                                    <span class="token-name">Smooth Love Potion</span>
+                                </div>
+                            </div>
+                            <div class="token-row">
+                                <div class="token-row-left">
+                                    <img src="assets/img/usdc.7eaf74af.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">usdc</span>
+                                    <span class="token-name">USD Coin</span>
+                                </div>
+                            </div>
+                            <div class="token-row unavailable">
+                                <div class="token-row-left">
+                                    <img src="assets/img/ron-logo.401896d7.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">RON/WRON</span>
+                                    <span class="token-name coming-soon">Coming soon</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

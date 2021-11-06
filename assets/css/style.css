@@ -95,7 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 104px;
+  padding-top: 40px;
   -webkit-box-align: center;
   align-items: center;
   flex: 1 1 0%;
@@ -167,8 +167,11 @@ body {
     border-radius: 12px;
     background: white;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 0px 4px 16px 0px rgb(222,230,241);
 }
 .token-symbol-btn img {
   width: 32px;
@@ -277,6 +280,126 @@ input[type=number]::placeholder {
     padding: 0;
     box-shadow: none;
 }
+#tokenSymbol .modal-dialog,
+#connectWallet .modal-dialog{
+  max-height: 80vh;
+}
+#tokenSymbol .modal-body{
+  padding: 1rem 0;
+}
+#tokenSymbol .modal-header,
+#connectWallet .modal-header{
+  padding: 20px;
+}
+#tokenSymbol .modal-content,
+#connectWallet .modal-content{
+  border-radius: 16px;
+}
+#tokenSymbol .token-row-holder{
+  height: 45vh;
+    overflow: auto;
+}
+.select-token-heading-modal{
+  font-weight: 600;
+    font-size: 20px;
+}
+.token-row{
+  box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px 20px;
+    height: 72px;
+    display: grid;
+    grid-template-columns: auto minmax(auto, 1fr) auto minmax(0px, 72px);
+    gap: 16px;
+    
+  cursor: pointer;
+    
+}
+.token-row:hover {
+  background-color: #eef3fb;
+}
+.token-row.unavailable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.token-row img{
+  width: 32px;
+  height: 32px;
+}
+.token-row-right {
+  display: flex;
+  flex-flow: column;
+}
+
+.token-row-right .token-abbr{
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d273d;
+  text-transform: uppercase;
+}
+.token-row-right .token-name{
+  font-size: 12px;
+  font-weight: 400;
+  color: #8f9bb3;
+}
+.token-row-right .token-name.coming-soon{
+  display: flex;
+  font-size: 12px;
+  padding: 1px 8px;
+  font-weight: 400;
+  color: #57627b;
+  background-color: #eef3fb;
+  border-radius: 8px;
+  width: 93px;
+}
+
+#connectWallet .modal-body{
+  padding: 1rem;
+}
+#connectWallet .modal-header{
+  border: 0;
+}
+.blue-text{
+  font-weight: 600;
+  color: #1273ea;
+  text-decoration: none;
+}
+.blue-text:hover{
+  text-decoration: underline;
+}
+.ct-modal-connect-btn{
+  margin-top: 30px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 0;
+  background-color: #1273ea;
+}
+.ct-modal-inner {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.ct-modal-inner img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+
+
+
 @media screen and (max-width: 767px) {
   .show-on-mobile {
     display: block;
