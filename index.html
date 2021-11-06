@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -61,7 +62,8 @@
                                 </div>
                             </div> -->
                             <div class="btn-group dropup nav-item-mobile">
-                                <button type="button" class="dropdown-toggle mobile-menu-item" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="dropdown-toggle mobile-menu-item" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <i class="more-icon"></i>
                                     <a class="mobile-menu-text">More</a>
                                 </button>
@@ -79,13 +81,14 @@
                                         </div>
                                     </div>
                                 </ul>
-                              </div>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="right-nav">
-                    <button type="button" class="btn connect-wallet-btn" data-bs-toggle="modal" data-bs-target="#connectWallet">
+                    <button type="button" class="btn connect-wallet-btn" data-bs-toggle="modal"
+                        data-bs-target="#connectWallet">
                         <i class="connect-icon"></i>
                         Connect Ronin Wallet
                     </button>
@@ -101,16 +104,81 @@
                             Swap
                         </div>
                         <div class="setting-holder">
-                            <button class="setting-btn">
+                            <!-- <button class="setting-btn">
                                 <i class="setting-icon"></i>
-                            </button>
+                            </button> -->
+                            <div class="dropdown">
+                                <button class="setting-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="setting-icon"></i>
+                                </button>
+                                <ul class="dropdown-menu setting-dropdown" aria-labelledby="dropdownMenuButton1">
+                                    <div class="setting-modal-head">
+                                        <h6 class="setting-modal-heading">
+                                            Transaction Settings
+                                        </h6>
+                                    </div>
+                                    <div class="setting-modal-body">
+                                        <div class="setting-modal-row">
+                                            <span class="row-head">Slippage Tolerance
+                                                <button type="button" class="tooltip-btn-holder"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Your transaction will revert if the price changes unfavorably by more than this percentage.">
+                                                        <i class="tooltip-icon"></i>
+                                                    </button>
+                                            </span>
+                                            <div class="row-content">
+                                                <input type="number" class="slippage-tolerance-input"
+                                                    placeholder="0.50%">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label"
+                                                        for="flexSwitchCheckDefault">Auto</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="setting-modal-row">
+                                            <span class="row-head">Transaction Deadline
+                                                <button type="button" class="tooltip-btn-holder"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Your transaction will revert if it is pending for more than this period of time.">
+                                                        <i class="tooltip-icon"></i>
+                                                    </button>
+                                            </span>
+                                            <div class="row-content">
+                                                <input type="number" class="transaction-deadline-input"
+                                                    placeholder="30">
+                                                <span>minutes</span>
+                                            </div>
+                                        </div>
+                                        <div class="setting-modal-row">
+                                            <span class="row-head-other">Interface Settings</span>
+                                            <div class="row-content">
+                                                <div class="form-check form-switch interface-setting">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="interfaceSettings">
+                                                    <label class="form-check-label" for="interfaceSettings">Expert
+                                                        Mode</label>
+                                                    <button type="button" class="tooltip-btn-holder"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        title="Allow high price impact trades and skip the confirm screen. Use at your own risk.">
+                                                        <i class="tooltip-icon"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swap-card-body">
                     <div class="swap-card-body-inner">
                         <div class="input-row">
-                            <button type="button" class="btn token-symbol-btn" data-bs-toggle="modal" data-bs-target="#tokenSymbol">
+                            <button type="button" class="btn token-symbol-btn" data-bs-toggle="modal"
+                                data-bs-target="#tokenSymbol">
                                 <img src="assets/img/token-1.png">
                                 <span>WETH</span>
                                 <i class="caret-down-btn"></i>
@@ -123,7 +191,8 @@
                             </button>
                         </div>
                         <div class="input-row">
-                            <button type="button" class="btn select-token-btn" data-bs-toggle="modal" data-bs-target="#tokenSymbol">
+                            <button type="button" class="btn select-token-btn" data-bs-toggle="modal"
+                                data-bs-target="#tokenSymbol">
                                 <span>Select token</span>
                                 <i class="caret-right-btn"></i>
                             </button>
@@ -132,7 +201,8 @@
                     </div>
                 </div>
                 <div class="swap-card-action">
-                    <button type="button" class="btn connect-wallet-btn-card" data-bs-toggle="modal" data-bs-target="#connectWallet">
+                    <button type="button" class="btn connect-wallet-btn-card" data-bs-toggle="modal"
+                        data-bs-target="#connectWallet">
                         Connect Ronin Wallet
                     </button>
                 </div>
@@ -144,7 +214,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
+                    </div>
                     <div class="modal-body">
                         <div class="modal-connect-token">
                             <div class="ct-modal-inner">
@@ -154,7 +224,7 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  I have read and agree to the <a class="blue-text" href="#">Terms of Service.</a>
+                                    I have read and agree to the <a class="blue-text" href="#">Terms of Service.</a>
                                 </label>
                             </div>
                             <button class="ct-modal-connect-btn">Connect to Ronin Wallet</button>
@@ -169,7 +239,7 @@
                     <div class="modal-header">
                         <h5 class="modal-title select-token-heading-modal">Select a token</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
+                    </div>
                     <div class="modal-body">
                         <div class="token-row-holder">
                             <div class="token-row">
@@ -224,9 +294,15 @@
         </div>
     </div>
     <div id="background-radial-gradient"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
     <script src="assets/js/main.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 
 </html>
