@@ -273,6 +273,7 @@ body {
   box-shadow: none;
   padding-top: 3px;
   padding-bottom: 3px;
+  text-transform: uppercase;
   box-shadow: 0px 4px 16px 0px rgb(222, 230, 241);
 }
 .token-symbol-btn img {
@@ -383,21 +384,26 @@ input[type="number"] {
   box-shadow: none;
 }
 #tokenSymbol .modal-dialog,
+#tokenSymbol2 .modal-dialog,
 #connectWallet .modal-dialog {
   max-height: 80vh;
 }
-#tokenSymbol .modal-body {
+#tokenSymbol .modal-body,
+#tokenSymbol2 .modal-body {
   padding: 1rem 0;
 }
 #tokenSymbol .modal-header,
+#tokenSymbol2 .modal-header,
 #connectWallet .modal-header {
   padding: 20px;
 }
 #tokenSymbol .modal-content,
+#tokenSymbol2 .modal-content,
 #connectWallet .modal-content {
   border-radius: 16px;
 }
-#tokenSymbol .token-row-holder {
+#tokenSymbol .token-row-holder,
+#tokenSymbol2 .token-row-holder {
   height: 45vh;
   overflow: auto;
 }

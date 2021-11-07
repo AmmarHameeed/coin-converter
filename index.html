@@ -178,7 +178,7 @@
                     <div class="swap-card-body-inner">
                         <div class="input-row">
                             <button type="button" class="btn token-symbol-btn" data-bs-toggle="modal"
-                                data-bs-target="#tokenSymbol">
+                                data-bs-target="#tokenSymbol" id="tokenBtnOne">
                                 <img src="assets/img/token-1.png">
                                 <span>WETH</span>
                                 <i class="caret-down-btn"></i>
@@ -192,9 +192,11 @@
                         </div>
                         <div class="input-row">
                             <button type="button" class="btn select-token-btn" data-bs-toggle="modal"
-                                data-bs-target="#tokenSymbol">
+                                data-bs-target="#tokenSymbol2" id="tokenBtnTwo">
+                                <img src="assets/img/token-1.png" style="display: none;">
                                 <span>Select token</span>
                                 <i class="caret-right-btn"></i>
+                                <i class="caret-down-btn" style="display: none;"></i>
                             </button>
                             <input type="number" placeholder="0">
                         </div>
@@ -242,7 +244,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="token-row-holder">
-                            <div class="token-row">
+                            <div class="token-row" data-token="weth">
                                 <div class="token-row-left">
                                     <img src="assets/img/token-1.png">
                                 </div>
@@ -251,7 +253,7 @@
                                     <span class="token-name">Ronin Wrapped Ether</span>
                                 </div>
                             </div>
-                            <div class="token-row">
+                            <div class="token-row" data-token="axs">
                                 <div class="token-row-left">
                                     <img src="assets/img/axs.3b7405b0.png">
                                 </div>
@@ -260,7 +262,7 @@
                                     <span class="token-name">Axie Infinity Shard</span>
                                 </div>
                             </div>
-                            <div class="token-row">
+                            <div class="token-row" data-token="slp">
                                 <div class="token-row-left">
                                     <img src="assets/img/slp.a3a5526b.svg">
                                 </div>
@@ -269,7 +271,7 @@
                                     <span class="token-name">Smooth Love Potion</span>
                                 </div>
                             </div>
-                            <div class="token-row">
+                            <div class="token-row" data-token="usdc">
                                 <div class="token-row-left">
                                     <img src="assets/img/usdc.7eaf74af.svg">
                                 </div>
@@ -278,7 +280,66 @@
                                     <span class="token-name">USD Coin</span>
                                 </div>
                             </div>
-                            <div class="token-row unavailable">
+                            <div class="token-row unavailable" data-token="ron">
+                                <div class="token-row-left">
+                                    <img src="assets/img/ron-logo.401896d7.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">RON/WRON</span>
+                                    <span class="token-name coming-soon">Coming soon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="tokenSymbol2" tabindex="-1" aria-labelledby="tokenSymbol2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title select-token-heading-modal">Select a token2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="token-row-holder">
+                            <div class="token-row" data-token-two="weth">
+                                <div class="token-row-left">
+                                    <img src="assets/img/token-1.png">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">weth</span>
+                                    <span class="token-name">Ronin Wrapped Ether</span>
+                                </div>
+                            </div>
+                            <div class="token-row" data-token-two="axs">
+                                <div class="token-row-left">
+                                    <img src="assets/img/axs.3b7405b0.png">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">axs</span>
+                                    <span class="token-name">Axie Infinity Shard</span>
+                                </div>
+                            </div>
+                            <div class="token-row" data-token-two="slp">
+                                <div class="token-row-left">
+                                    <img src="assets/img/slp.a3a5526b.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">slp</span>
+                                    <span class="token-name">Smooth Love Potion</span>
+                                </div>
+                            </div>
+                            <div class="token-row" data-token-two="usdc">
+                                <div class="token-row-left">
+                                    <img src="assets/img/usdc.7eaf74af.svg">
+                                </div>
+                                <div class="token-row-right">
+                                    <span class="token-abbr">usdc</span>
+                                    <span class="token-name">USD Coin</span>
+                                </div>
+                            </div>
+                            <div class="token-row unavailable" data-token-two="ron">
                                 <div class="token-row-left">
                                     <img src="assets/img/ron-logo.401896d7.svg">
                                 </div>
@@ -295,6 +356,7 @@
     </div>
     <div id="background-radial-gradient"></div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
     <script src="assets/js/main.js"></script>
     <script>
